@@ -1,4 +1,4 @@
-# raccha-ai
+# Raccha AI
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,135 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-raccha-ai is a company surfaced via the API Evangelist harvest backlog (source: mcp-registry) and added to the network as a stub for full-pipeline profiling.
-- https://raccha.ai/
+Raccha AI provides MCP-native infrastructure enabling agents to create controlled chaos. It offers storage, messaging, identity, and runtime tools, with a single specification supporting HTTP, MCP, CLI, and generated SDKs. Early access is free, focusing on proof of concept and usage-based pricing.
+
+**Areas:** AI · Infrastructure · MCP · Agents · Chaos
+
+## Raccha AI on APIs.io
+
+Everything profiled for Raccha AI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/raccha-ai/](https://apis.io/providers/raccha-ai/)** — or go straight to one of the APIs or properties below.
+
+### APIs (15)
+
+- [Raccha AI Access Keys API](https://apis.io/apis/raccha-ai/raccha-ai-access-keys-api/) — Scoped, revocable credentials issued against a role.
+- [Raccha AI Auth API](https://apis.io/apis/raccha-ai/raccha-ai-auth-api/) — Passwordless (magic-link) authentication and session bootstrap.
+- [Raccha AI Kv API](https://apis.io/apis/raccha-ai/raccha-ai-kv-api/) — Per-account, namespace-scoped key/value storage.
+- [Raccha AI OAuth API](https://apis.io/apis/raccha-ai/raccha-ai-oauth-api/) — OAuth 2.1 authorization-code + PKCE endpoints for browser-based sign-in.
+- [Raccha AI Other API](https://apis.io/apis/raccha-ai/raccha-ai-other-api/) — The other API from Raccha AI — 11 operation(s) for other.
+- [Raccha AI Queue API](https://apis.io/apis/raccha-ai/raccha-ai-queue-api/) — Per-account, namespace-scoped FIFO queues.
+- [Raccha AI Register API](https://apis.io/apis/raccha-ai/raccha-ai-register-api/) — OAuth 2.0 Dynamic Client Registration (RFC 7591) — register an MCP/CLI client before starting a device-code sign-in.
+- [Raccha AI Roles API](https://apis.io/apis/raccha-ai/raccha-ai-roles-api/) — Named, reusable permission groupings for access keys.
+- [Raccha AI Sse Hooks API](https://apis.io/apis/raccha-ai/raccha-ai-sse-hooks-api/) — Long-lived outbound Server-Sent-Events stream registration — for subscribers with no stable inbound address (webhook_targets' sibling primitive).
+- [Raccha AI Stats API](https://apis.io/apis/raccha-ai/raccha-ai-stats-api/) — Account-level usage stats.
+- [Raccha AI Telegram API](https://apis.io/apis/raccha-ai/raccha-ai-telegram-api/) — Telegram bot pairing and inbound webhook.
+- [Raccha AI Tools API](https://apis.io/apis/raccha-ai/raccha-ai-tools-api/) — Stateless utility tools — no auth, no owner_key required.
+- [Raccha AI Topic API](https://apis.io/apis/raccha-ai/raccha-ai-topic-api/) — Per-account, namespace-scoped append-only event topics.
+- [Raccha AI Webhook API](https://apis.io/apis/raccha-ai/raccha-ai-webhook-api/) — Public inbound webhooks — URL path selects the destination queue.
+- [Raccha AI Webhook Targets API](https://apis.io/apis/raccha-ai/raccha-ai-webhook-targets-api/) — The webhook-targets API from Raccha AI — 2 operation(s) for webhook-targets.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Raccha AI Agentic Access](https://apis.io/agentic-access/raccha-ai/raccha-ai-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [CreateOrgBody](https://apis.io/schemas/raccha-ai/raccha-ai-create-org-body/)
+- [DeviceApproveBody](https://apis.io/schemas/raccha-ai/raccha-ai-device-approve-body/)
+- [RegisterBody](https://apis.io/schemas/raccha-ai/raccha-ai-register-body/)
+- [RegisterResp2](https://apis.io/schemas/raccha-ai/raccha-ai-register-resp2/)
+- [StatsResp](https://apis.io/schemas/raccha-ai/raccha-ai-stats-resp/)
+- [SystemOverviewResp](https://apis.io/schemas/raccha-ai/raccha-ai-system-overview-resp/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Raccha Ai Context](https://apis.io/jsonld/raccha-ai/raccha-ai-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Raccha AI API Rules](https://apis.io/rules/raccha-ai/raccha-ai-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Raccha AI Domain Security](https://apis.io/security/raccha-ai/raccha-ai-domain-security/)
+- [Raccha AI Vulnerability Disclosure](https://apis.io/security/raccha-ai/raccha-ai-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://raccha.ai/)
+- [Documentation](https://raccha.ai/connect.html)
+- [Getting started](https://raccha.ai/connect.html)
+- [API reference](https://raccha.ai/connect.html)
+- [Security](https://raccha.ai/legal.html)
+- [Status](https://raccha.ai/status.html)
+
+## API Evangelist rating
+
+**Kin Score 41.3** — developing · rubric 0.28.0 · scored 2026-11-22
+
+| Facet | Score |
+|---|---|
+| Discoverability | 76.8 |
+| Contract quality | 52.5 |
+| Contract governance | 79.1 |
+| Operational transparency | 23.8 |
+| Developer ergonomics | 35.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 43.1** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | unknown |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | partial |
+| Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+
+**Regulatory alignment 20.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/raccha-ai/](https://apis.io/providers/raccha-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Raccha AI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/raccha-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
